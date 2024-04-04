@@ -4,8 +4,8 @@
 #### Branch Strategy
 ```
 main
-└─ develop (default)
-    └─ DOMAIN/이슈번호
+└─ develop
+    └─ DOMAIN/이슈번호    ex) Diary/#3
 ```
 
 #### Commit Message
