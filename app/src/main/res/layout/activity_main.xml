@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="210dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailText"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="330dp"
+        tools:ignore="MissingConstraints"/>
+
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:background="@color/white"
+        android:hint="이메일을 입력하세요"
+        android:maxLength="50"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="325dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/gmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:background="@color/white"
+        android:hint="\@gmail.com"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="325dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/passwdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passwdText"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="405dp"
+        tools:ignore="MissingConstraints"
+         />
+
+
+    <EditText
+        android:id="@+id/loginPasswd"
+        android:inputType="textPassword"
+        android:layout_width="251sp"
+        android:layout_height="40sp"
+        android:maxLength="20"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="400dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/goSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signupText"
+        android:textSize="18sp"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="500dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/autoLoginCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동 로그인"
+        android:textSize="18sp"
+        android:checked="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="490dp"
+        tools:ignore="MissingConstraints"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
