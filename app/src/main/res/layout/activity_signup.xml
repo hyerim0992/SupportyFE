@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="70sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="90sp"
+            android:text="@string/signupText"
+            android:textSize="50sp"
+            android:textColor="#4E7F9A"
+            android:textStyle="bold"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="50sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/signupEmail"
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:hint="이메일"
+            android:maxLength="50"
+            android:background="@drawable/edittext_border"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="50sp">
+        </EditText>
+
+        <EditText
+            android:layout_width="120sp"
+            android:layout_height="40sp"
+            android:hint="\@gmail.com"
+            android:enabled="false"
+            android:background="@drawable/edittext_border"
+            android:layout_marginStart="147sp"
+            android:layout_marginTop="-40sp">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/sendCertification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인증번호 발송"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/mainColor"
+            android:padding="5sp"
+            android:textSize="15sp"
+            android:layout_marginStart="270sp"
+            android:layout_marginTop="-43sp">
+
+        </Button>
+
+        <EditText
+            android:id="@+id/certification"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:inputType="numberDecimal"
+            android:hint="인증번호 입력"
+            android:maxLength="6"
+            android:background="@drawable/edittext_border"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="30sp">
+        </EditText>
+
+        <Button
+            android:id="@+id/checkCertification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/mainColor"
+            android:padding="5sp"
+            android:textSize="15sp"
+            android:layout_marginStart="275sp"
+            android:layout_marginTop="-43sp">
+
+        </Button>
+
+        <EditText
+            android:id="@+id/signupPasswd"
+            android:inputType="textPassword"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:hint="비밀번호"
+            android:maxLength="20"
+            android:background="@drawable/edittext_border"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="30sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/signupPasswdCheck"
+            android:inputType="textPassword"
+            android:layout_width="250sp"
+            android:layout_height="40sp"
+            android:hint="비밀번호 확인"
+            android:maxLength="20"
+            android:background="@drawable/edittext_border"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="30sp">
+        </EditText>
+
+        <Button
+            android:id="@+id/completeSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/mainColor"
+            android:paddingHorizontal="50sp"
+            android:textSize="20sp"
+            android:layout_marginStart="120sp"
+            android:layout_marginTop="40sp">
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

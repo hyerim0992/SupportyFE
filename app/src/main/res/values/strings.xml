@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Supporty</string>
+    <string name="emailText">이메일</string>
+    <string name="title">Supporty</string>
+    <string name="passwdText">비밀번호</string>
+    <string name="signupText">회원가입</string>
+    <string name="autoLoginText">자동로그인</string>
+</resources>
