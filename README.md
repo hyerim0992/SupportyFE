@@ -13,6 +13,9 @@ main
 <type>: <description>
 
 [optional body]
+
+ex) feat: 회원가입/로그인
+    fix: 회원가입 이메일 인증 오류
 ```
 
 #### Commit Type
