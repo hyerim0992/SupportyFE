@@ -5,7 +5,7 @@
 ```
 main
 └─ develop
-    └─ DOMAIN/이슈번호    ex) Diary/#3
+    └─ DOMAIN/이슈번호/이름    ex) Diary/#3/길동
 ```
 
 #### Commit Message
