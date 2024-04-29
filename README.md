@@ -3,9 +3,13 @@
 ### Convention
 #### Branch Strategy
 ```
-main
-└─ develop
+main: 제품 출시 가능한 브랜치
+develop: 다음 출시 버전 개발하는 브랜치
+
+feature: 기능 개발하는 브랜치
     └─ DOMAIN/이슈번호/이름    ex) Diary/#3/길동
+release: 이번 출시 버전 준비하는 브랜치
+hotfix: 출시 버전에서 발생한 버그를 수정하는 브랜치
 ```
 
 #### Commit Message
