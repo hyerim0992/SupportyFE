@@ -28,7 +28,7 @@ hotfix: 출시 버전에서 발생한 버그를 수정하는 브랜치
 
    4-2. bugfix 가 있었다면, 수정한 부분을 develop 브랜치에도 반영하기 위해 develop 브랜치에도 merge합니다. 
 
-5. master 브랜치에서 버그가 발생한다면, hotfix 브랜치를 생성합니다. 
+5. main 브랜치에서 버그가 발생한다면, hotfix 브랜치를 생성합니다. 
 
 6. hotfix 브랜치에서 bugfix가 끝나면, main 브랜치와 develop 브랜치에 각각 merge합니다. 
 ```
