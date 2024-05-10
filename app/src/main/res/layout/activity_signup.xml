@@ -32,32 +32,21 @@
         </TextView>
 
         <EditText
-            android:id="@+id/signupEmail"
-            android:layout_width="130sp"
+            android:id="@+id/signupId"
+            android:layout_width="250sp"
             android:layout_height="40sp"
-            android:hint="이메일"
+            android:hint="아이디"
             android:maxLength="50"
             android:background="@drawable/edittext_border"
             android:layout_marginStart="16sp"
             android:layout_marginTop="50sp">
         </EditText>
 
-        <EditText
-            android:layout_width="120sp"
-            android:layout_height="40sp"
-            android:hint="\@gmail.com"
-            android:enabled="false"
-            android:background="@drawable/edittext_border"
-            android:layout_marginStart="147sp"
-            android:layout_marginTop="-40sp">
-        </EditText>
-
-
         <Button
-            android:id="@+id/sendCertification"
+            android:id="@+id/checkIdDupl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="인증번호 발송"
+            android:text="중복 확인"
             android:textColor="@color/black"
             android:backgroundTint="@color/mainColor"
             android:padding="5sp"
@@ -67,31 +56,6 @@
 
         </Button>
 
-        <EditText
-            android:id="@+id/certification"
-            android:layout_width="250sp"
-            android:layout_height="40sp"
-            android:inputType="numberDecimal"
-            android:hint="인증번호 입력"
-            android:maxLength="6"
-            android:background="@drawable/edittext_border"
-            android:layout_marginStart="16sp"
-            android:layout_marginTop="30sp">
-        </EditText>
-
-        <Button
-            android:id="@+id/checkCertification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="확인"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/mainColor"
-            android:padding="5sp"
-            android:textSize="15sp"
-            android:layout_marginStart="275sp"
-            android:layout_marginTop="-43sp">
-
-        </Button>
 
         <EditText
             android:id="@+id/signupPasswd"
@@ -128,7 +92,7 @@
             android:paddingHorizontal="50sp"
             android:textSize="20sp"
             android:layout_marginStart="120sp"
-            android:layout_marginTop="40sp">
+            android:layout_marginTop="80sp">
         </Button>
 
 
