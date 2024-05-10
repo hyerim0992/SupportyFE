@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 SignupRes result = response.body();
                 assert result != null;
                 if(result.getStatus()==200) {
-                    finish();
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(intent);
                 }
             }
             @Override
@@ -63,26 +64,22 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         loginId = findViewById(R.id.loginId);
         loginPasswd = findViewById(R.id.loginPasswd);
-
-        String id = loginId.getText().toString();
-        String passwd = loginPasswd.getText().toString();
-
-        //회원가입 누르면 회원가입 창으로 넘어감
+        apiServiceInterface = retrofit.create(ApiService.class);
 
         goSignup = findViewById(R.id.goSignup);
 
-        goSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
-                startActivity(intent);
-            }
+        //회원가입 버튼 누르면 회원가입 창으로 넘어감
+        goSignup.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+            startActivity(intent);
         });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               login(new SignupData(id, passwd));
+                String id = loginId.getText().toString();
+                String passwd = loginPasswd.getText().toString();
+                login(new SignupData(id, passwd));
             }
         });
 
