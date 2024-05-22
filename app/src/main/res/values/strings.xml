@@ -5,4 +5,7 @@
     <string name="passwdText">비밀번호</string>
     <string name="signupText">회원가입</string>
     <string name="autoLoginText">자동로그인</string>
+    <string name="breakfast">아침</string>
+    <string name="lunch">점심</string>
+    <string name='dinner'>저녁</string>
 </resources>
