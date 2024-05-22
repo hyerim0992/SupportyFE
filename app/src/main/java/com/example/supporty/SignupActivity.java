@@ -26,7 +26,7 @@ public class SignupActivity extends AppCompatActivity {
     private Button checkIdDupl, completeSignup;
     private EditText signupId, signupPasswd, signupPasswdCheck;
     private ApiService apiServiceInterface;
-    private Retrofit retrofit = RetrofitClient.getClient();
+    private Retrofit retrofit;
 
     private void startSignup(SignupData data) {
         apiServiceInterface.signupRequest(data).enqueue(new Callback<SignupRes>() {
@@ -59,16 +59,16 @@ public class SignupActivity extends AppCompatActivity {
         signupPasswd = findViewById(R.id.signupPasswd);
         signupPasswdCheck = findViewById(R.id.signupPasswdCheck);
         completeSignup = findViewById(R.id.completeSignup);
-        //retrofit = RetrofitClient.getClient();
+
+        retrofit = RetrofitClient.getClient();
         apiServiceInterface = retrofit.create(ApiService.class);
 
+        checkIdDupl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-//        checkIdDupl.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
+            }
+        });
 
         completeSignup.setOnClickListener(v -> {
             String id = signupId.getText().toString();
