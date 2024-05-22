@@ -23,10 +23,10 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/emailText"
+        android:id="@+id/idText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/emailText"
+        android:text="@string/idText"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,11 +36,11 @@
 
 
     <EditText
-        android:id="@+id/loginEmail"
-        android:layout_width="150sp"
+        android:id="@+id/loginId"
+        android:layout_width="251sp"
         android:layout_height="40sp"
         android:background="@color/white"
-        android:hint="이메일을 입력하세요"
+        android:hint="아이디를 입력하세요"
         android:maxLength="50"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,19 +49,6 @@
         android:layout_marginTop="325dp"
         tools:ignore="MissingConstraints" />
 
-
-    <EditText
-        android:id="@+id/gmailText"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:background="@color/white"
-        android:hint="\@gmail.com"
-        android:enabled="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="258dp"
-        android:layout_marginTop="325dp"
-        tools:ignore="MissingConstraints" />
 
 
     <TextView
@@ -89,6 +76,19 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="104dp"
         android:layout_marginTop="400dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="550dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:text="로그인 확인"
         tools:ignore="MissingConstraints" />
 
 
@@ -119,6 +119,7 @@
         android:layout_marginStart="230dp"
         android:layout_marginTop="490dp"
         tools:ignore="MissingConstraints"/>
+
 
 
 
